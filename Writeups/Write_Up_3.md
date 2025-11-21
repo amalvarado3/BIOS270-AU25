@@ -16,9 +16,9 @@ This is the latest:
 - <img width="563" height="306" alt="image" src="https://github.com/user-attachments/assets/d4660da1-fef5-410a-895f-78e6862217ea" />
 
 Notes:
-- X
-- Y
-- Z
+- The latest yamp file contains all of the same packages as the original
+- The change between the two is that the latest has rpy2 installed
+- There is also a prefix at the end of the latest yaml file because this is where the environment was stored before exporting
 
 1. What micromamba command can you use to list all created environemnts?
    - ***micromamba env list***
