@@ -1,28 +1,29 @@
-# Write-up 0: template
+# Write-up 3: Environment
 
-**Name:** Khoa Hoang  
-**Student ID:** khoang99  
-**Date:** 11/11/2025  
-
----
-
-## Overview
-
-This section introduces the purpose of the write-up.  
-For example:  
-> This document is a practice exercise in writing and formatting Markdown files clearly and professionally.
+**Name:** Angelica Alvarado
+**Student ID:** avocado  
+**Date:** 11/18/2025  
 
 ---
+---
 
-## Content
+## 1. Micromamba Questions
 
-This is the main part of your write-up.  
-You can include explanations, examples, and notes 
+Comparing (bioinfo_example_latest.yaml) with the original (bioinfo_example.yaml):
+
+1. What micromamba command can you use to list all created environemnts? ***micromamba env list***
+2. What micromamba command can you use to list all packages installed in a specific environment? ***micromamba list -n env_name***
+3. What micromamba command can you use to remove a package? ***micromamba remove -n env_name package_name***
+4. What micromamba command can you use to install a package from a specific channel? ***micromamba install -n env_name -c specific_channel_name package_name***
+5. What micromamba command can you use to remove an environment? ***micromamba env remove -n bioinfo_example***
+6. What are all the r-base and Bioconductor packages that were installed in the bioinfo_example environment? ***micromamba list -n bioinfo_example | grep -E "r-base|bioconductor***
 
 You can use some text formating, lists, and tables to imporve the write-up readability
 #### **Text Formatting**
 
 You can make text **bold**, *italic*, or even ***bold and italic*** for emphasis.
+
+## 2. Container Questions
 
 #### **Lists**
 
