@@ -10,6 +10,10 @@
 ## 1. Micromamba Questions
 
 Comparing (bioinfo_example_latest.yaml) with the original (bioinfo_example.yaml):
+<img width="558" height="402" alt="image" src="https://github.com/user-attachments/assets/bb835358-785e-4ca2-884c-6181f503c4ad" />
+<img width="563" height="306" alt="image" src="https://github.com/user-attachments/assets/d4660da1-fef5-410a-895f-78e6862217ea" />
+
+
 
 1. What micromamba command can you use to list all created environemnts?
    ***micromamba env list***
