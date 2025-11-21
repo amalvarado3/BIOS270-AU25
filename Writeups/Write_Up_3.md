@@ -10,23 +10,28 @@
 ## 1. Micromamba Questions
 
 Comparing (bioinfo_example_latest.yaml) with the original (bioinfo_example.yaml):
-<img width="558" height="402" alt="image" src="https://github.com/user-attachments/assets/bb835358-785e-4ca2-884c-6181f503c4ad" />
-<img width="563" height="306" alt="image" src="https://github.com/user-attachments/assets/d4660da1-fef5-410a-895f-78e6862217ea" />
+This is the Original:
+- <img width="558" height="402" alt="image" src="https://github.com/user-attachments/assets/bb835358-785e-4ca2-884c-6181f503c4ad" />
+This is the latest:
+- <img width="563" height="306" alt="image" src="https://github.com/user-attachments/assets/d4660da1-fef5-410a-895f-78e6862217ea" />
 
-
+Notes:
+- X
+- Y
+- Z
 
 1. What micromamba command can you use to list all created environemnts?
-   ***micromamba env list***
+   - ***micromamba env list***
 3. What micromamba command can you use to list all packages installed in a specific environment?
-   ***micromamba list -n env_name***
+   - ***micromamba list -n env_name***
 5. What micromamba command can you use to remove a package?
-   ***micromamba remove -n env_name package_name***
+   - ***micromamba remove -n env_name package_name***
 7. What micromamba command can you use to install a package from a specific channel?
-   ***micromamba install -n env_name -c specific_channel_name package_name***
+   - ***micromamba install -n env_name -c specific_channel_name package_name***
 9. What micromamba command can you use to remove an environment?
-    ***micromamba env remove -n bioinfo_example***
+   - ***micromamba env remove -n bioinfo_example***
 11. What are all the r-base and Bioconductor packages that were installed in the bioinfo_example environment?
-    ***micromamba list -n bioinfo_example | grep -E "r-base|bioconductor***
+   - ***micromamba list -n bioinfo_example | grep -E "r-base|bioconductor***
 
 You can use some text formating, lists, and tables to imporve the write-up readability
 #### **Text Formatting**
