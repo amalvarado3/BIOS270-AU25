@@ -33,66 +33,10 @@ Notes:
 11. What are all the r-base and Bioconductor packages that were installed in the bioinfo_example environment?
    - ***micromamba list -n bioinfo_example | grep -E "r-base|bioconductor***
 
-You can use some text formating, lists, and tables to imporve the write-up readability
-#### **Text Formatting**
-
-You can make text **bold**, *italic*, or even ***bold and italic*** for emphasis.
 
 ## 2. Container Questions
-
-#### **Lists**
-
-**Unordered list:**
-- Apple  
-- Banana  
-- Cherry  
-
-**Ordered list:**
-1. First step  
-2. Second step  
-3. Third step  
-
-#### **Table Example**
-
-| Tool | Description         | Example Command        |
-|------|---------------------|------------------------|
-| `ls` | Lists files         | `ls -la`               |
-| `grep` | Searches text     | `grep "pattern" file.txt` |
-| `wc` | Counts words/lines  | `wc -l filename.txt`   |
-
-Code snippets and images are highly recommended to document your work.
-
-#### **Code Examples**
-
-**Inline code example:** Use the `print()` function to display text.  
-
-**Code block example:**
-
-```bash
-# Example command line code
-echo "Hello, Markdown!"
-```
-
-```python
-# Example Python code
-for i in range(3):
-    print("Iteration:", i)
-```
-
-For longer script, you can say something like, `script1.py` contains functions for reading fasta file. Ideally, all codes you run should be saved in corresponding files. 
+1. Can you execute the python file that prints "Hello World!" from your singularity container? Why or why not?
+   - ***No, you cannot.***
 
 
-#### **Image Example**
 
-![Example placeholder image](./snyderlab.png)
-
-#### **Link Example**
-
-Learn more about Markdown syntax here:  
-[Markdown Guide](https://www.markdownguide.org/basic-syntax/)
-
----
-
-
-## Acknowledgement
-Collaborator: Brady Hislop
