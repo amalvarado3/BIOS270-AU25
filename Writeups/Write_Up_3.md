@@ -1,82 +1,26 @@
-# Write-up 0: template
+# Write-up 3: Data
 
-**Name:** Khoa Hoang  
-**Student ID:** khoang99  
-**Date:** 11/11/2025  
-
----
-
-## Overview
-
-This section introduces the purpose of the write-up.  
-For example:  
-> This document is a practice exercise in writing and formatting Markdown files clearly and professionally.
+**Name:** Angelica Alvarado
+**Student ID:** avocado  
+**Date:** 11/18/2025  
 
 ---
 
-## Content
+## 1. Create a Local SQL Database
 
-This is the main part of your write-up.  
-You can include explanations, examples, and notes 
+1. Examine create_bacteria_db.sh How many tables will be created in the database?
+   - There will be three tables created: GFF Table, Protein Cluster Table, Metadata Table
+2. In the insert_gff_table.py script you submitted, explain the logic of try and except. Why is this necessary?
+   - The try and except logic stops the program from crashing when the database is unavailable temporarily. This logic is necessary because SQLite only allows one writer at a time, so without this, the job would crash every time two tasks were trying to be written at once.
 
-You can use some text formating, lists, and tables to imporve the write-up readability
-#### **Text Formatting**
+## 2. Query the Created Database
+1. Record the runtime:
+   - I stopped the session early, but this took a couple minutes.
+2. Uncomment db.index_record_ids() in query_bacterial_db.py. How does the runtime change? Why?
+   - The run time decreased because the database doesn't scan the full table, it just jumps to the relevent rows.
 
-You can make text **bold**, *italic*, or even ***bold and italic*** for emphasis.
-
-#### **Lists**
-
-**Unordered list:**
-- Apple  
-- Banana  
-- Cherry  
-
-**Ordered list:**
-1. First step  
-2. Second step  
-3. Third step  
-
-#### **Table Example**
-
-| Tool | Description         | Example Command        |
-|------|---------------------|------------------------|
-| `ls` | Lists files         | `ls -la`               |
-| `grep` | Searches text     | `grep "pattern" file.txt` |
-| `wc` | Counts words/lines  | `wc -l filename.txt`   |
-
-Code snippets and images are highly recommended to document your work.
-
-#### **Code Examples**
-
-**Inline code example:** Use the `print()` function to display text.  
-
-**Code block example:**
-
-```bash
-# Example command line code
-echo "Hello, Markdown!"
-```
-
-```python
-# Example Python code
-for i in range(3):
-    print("Iteration:", i)
-```
-
-For longer script, you can say something like, `script1.py` contains functions for reading fasta file. Ideally, all codes you run should be saved in corresponding files. 
+## 3. HDF5 Data
+1. Why does chunk configuration make sense? What kind of data access pattern is expected and why does this align with biological use cases?
+   - The chunk configuration makes sense because we analyze and work with biological data in batches of proteins, not one protein at a time. When we analyze proteins we analyze them in groups, and HDF5 can read those batches quickly and efficiently. This makes our analyses faster.
 
 
-#### **Image Example**
-
-![Example placeholder image](./snyderlab.png)
-
-#### **Link Example**
-
-Learn more about Markdown syntax here:  
-[Markdown Guide](https://www.markdownguide.org/basic-syntax/)
-
----
-
-
-## Acknowledgement
-Collaborator: Brady Hislop
