@@ -1,4 +1,4 @@
-# Write-up 3: Environment
+# Write-up 2: Environment
 
 **Name:** Angelica Alvarado
 **Student ID:** avocado  
